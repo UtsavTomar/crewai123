@@ -8,15 +8,15 @@ def run():
     """
     Run the crew to fetch Zendesk tickets and generate a summary.
     """
-    # inputs = {
-    #     "user_query": "How many tickets come from July 2024 and how many come from August 2024?",
-    # }
-    print("## Enter query")
-    print('-------------------------------')
-    inputs = input(
-        dedent("""
-      user_query
-    """))
+    inputs = {
+        "user_query": "How many tickets come from July 2024 and how many come from August 2024?",
+    }
+    # print("## Enter query")
+    # print('-------------------------------')
+    # inputs = input(
+    #     dedent("""
+    #   user_query
+    # """))
 
     # Kicking off the crew
     result = ZendeskTicketAnalysisCrew().crew().kickoff(inputs=inputs)
