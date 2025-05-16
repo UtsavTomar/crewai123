@@ -1,17 +1,12 @@
-# Bar Chart Example (Mermaid)
-
-This bar chart shows sample data using Mermaid. You need to view this in a Mermaid-supported Markdown viewer (e.g., GitHub, Obsidian, or VS Code with "Markdown Preview Mermaid Support").
-
-## Sample Bar Chart
+# Simulated Bar Chart Using Gantt (Mermaid)
 
 ```mermaid
-%%{init: {"theme": "default"}}%%
-bar
-    title Sales Report
-    x-axis Months
-    y-axis Revenue (in $K)
-    "January": 30
-    "February": 45
-    "March": 60
-    "April": 50
-    "May": 80
+gantt
+    title Monthly Revenue
+    dateFormat  YYYY-MM-DD
+    section Revenue
+    January  :a1, 2025-01-01, 30d
+    February :a2, 2025-02-01, 45d
+    March    :a3, 2025-03-01, 60d
+    April    :a4, 2025-04-01, 50d
+    May      :a5, 2025-05-01, 80d
