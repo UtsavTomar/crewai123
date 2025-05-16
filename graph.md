@@ -1,12 +1,17 @@
-# Sample Graph in Markdown
+# Bar Chart Example (Mermaid)
 
-This is a simple flowchart rendered using [Mermaid](https://mermaid-js.github.io/mermaid/#/).
+This bar chart shows sample data using Mermaid. You need to view this in a Mermaid-supported Markdown viewer (e.g., GitHub, Obsidian, or VS Code with "Markdown Preview Mermaid Support").
 
-## Flowchart
+## Sample Bar Chart
 
 ```mermaid
-graph TD
-    A[Start] --> B{Is it working?}
-    B -- Yes --> C[Keep it running]
-    B -- No --> D[Fix it]
-    D --> B
+%%{init: {"theme": "default"}}%%
+bar
+    title Sales Report
+    x-axis Months
+    y-axis Revenue (in $K)
+    "January": 30
+    "February": 45
+    "March": 60
+    "April": 50
+    "May": 80
